@@ -1,0 +1,85 @@
+*:root{
+    font-family: "DM sans";
+}
+
+.billContainer{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    background-color:#F8FBFD ;
+}
+body{
+    margin:0;
+}
+svg{
+    margin-top: 2em;
+    width: 6em;
+}
+.Message{
+    font-family: "DM sans";
+    color:#052237;
+    background-color:white;
+}
+.billContainer__header{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 1em;
+}
+.billContainer__date{
+    font-size: 1.7em;
+}
+.billContainer__body{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
+p{
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #052237;
+}
+.billContainer__body__title{
+    font-size: 2em;
+    text-transform: uppercase;
+    color:#052237;
+}
+.Signature{
+    text-decoration: uppercase;
+    font-weight: 600;
+}
+.SignatureImg{
+ width: 12em;
+}
+.billContainer__Footer{
+align-self: flex-end;
+margin-right: 3em ;
+}
+.billContainer__body__info{
+    font-weight: 700;
+    color:#052237;
+}
+.navbar__container__btn{
+    display:flex;
+    justify-content:center;
+     flex-direction: row;
+     align-items: center;
+    margin-top: 1.3em;
+}
+.btn--login{
+    color:white;
+    background-color:#052237 ;
+    border-radius: 4px;
+    padding: 0.8em 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    width:11em;
+}
+.btn--login:hover{
+    background: #000;
+}

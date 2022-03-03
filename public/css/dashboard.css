@@ -1,0 +1,55 @@
+.TableReservateurs{
+    border: 2px solid black;
+    width:100%;
+}
+
+   .FunctionalityContainer__item:hover{
+    transform: translateY(-1em);
+}
+th{
+    text-align: center;
+    background-color:#052237 ;
+    color: white;
+   font-size: 1.4em;
+   border: 2px solid black;
+}
+td{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    height: 3em;
+    border: 2px solid black;
+}
+.FunctionalityContainer__item a svg{
+    fill: #052237;
+}
+.Name{
+    text-align: center;
+    font-size: 2.3em;
+    color: black;
+    text-transform: uppercase ;
+    margin-bottom: 1em;
+}
+.formation__item__link{
+    background-color: white;
+    color:#052237;
+    border: 2px solid black;
+    padding: 0.3em 1em;
+    font-weight: 700;
+    width: 2em;
+    border-radius: 8px;
+    
+}
+.formation__item__link:hover{
+    text-decoration: none;
+    background-color: #000;
+    color:white;
+}
+@media screen and (max-width: 433px){
+td{
+    font-size: 0.7em;
+}
+th{
+    font-size: 1em;
+}
+}

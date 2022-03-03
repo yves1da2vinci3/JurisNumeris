@@ -1,0 +1,19 @@
+*:root{
+    font-family: "DM sans";
+}
+
+.main-title{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+p{
+    margin: 2em;
+    font-weight: 400;
+    font-size: 1.4em;
+}
+footer{
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}

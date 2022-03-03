@@ -1,0 +1,142 @@
+
+.formationItem__container{
+    background-color:#F8FBFD ;
+    justify-content: center;
+    background-color: #F8FBFD;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+.formationItem__img{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+svg{
+    fill: #F8FBFD;
+}
+.ComeBckArrow{
+    
+    display: flex;
+    padding-top: 1em;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+}
+.formation__img{
+    height: 15em;
+}
+.formationItem__Title{
+    font-size: 3em;
+    color: #052237;
+    font-weight: 700;
+}
+.formationItem__description,.cibleInfo{
+    color: #707070;
+    font-size: 2em;
+}
+.formationItem__info{
+    display: flex;
+    flex-direction: column;
+}
+.cible{
+    color: #052237;
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.Formcontrol{
+    align-self: center;
+    margin-top: 1em;
+display: none;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2em;
+    width: 21em;
+    height: 36em;
+    border-radius: 6px;
+    justify-content: space-between;
+    box-shadow: rgba(7, 124, 184, 0.16) 0px 8px 24px;
+}
+input{
+    border : 1px solid #4E8DDC;
+    font-family: "DM sans";
+}
+.form__input{
+    height: 4em;
+    border-radius: 5px;
+    background-color: #F8FBFD;
+    font-weight: 600;
+    
+}
+.form__input:focus-visible{
+
+    border: 2px solid #4E8DDA;
+
+    
+}
+.form__submitBtn{
+    color: #fff;
+    font-weight: 700;
+    padding: 1.2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #052237;
+    cursor: pointer;
+}
+
+.formation__item__prix{
+    font-size:1.2em;
+    font-weight: 700;
+    font-family: "DM sans";
+}
+.formation__item__prix span{
+    color: #052237;
+}
+.info{
+    color: #052237;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+/* 
+btn our s'sinscrire */
+.navbar__container__links{
+    font-size:1.1em;
+    display: none;
+    margin-bottom: 0.6em;
+}
+
+.navbar__container__btn--2{
+    display:flex;
+    justify-content:center;
+     flex-direction: row;
+     align-items: center;
+    margin-top: 1.3em;
+}
+
+.btn--login--2{
+    color:white;
+    background-color:#052237 ;
+    border-radius: 4px;
+    padding: 0.8em 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    width:16em;
+}
+.btn--login--2:hover{
+    background: #000;
+}
+
+@media screen and (max-width:768px){
+    .formationItem__Title,.cible{
+        font-size: 1.7em;
+    }
+    .formationItem__description,.cibleInfo{
+        
+        font-size: 1em;
+    }
+}

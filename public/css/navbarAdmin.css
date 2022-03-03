@@ -1,0 +1,100 @@
+header{
+    background-color:#F8FBFD;
+    display:flex;
+    flex-direction: row;
+    font-family: "DM sans";
+    justify-content: space-between;
+    padding: 0em 0.25em;
+}
+.navbar__container__brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+.navbar__container__brand svg{
+    width:3em;
+}
+.navbar__container__links{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.14em;
+}
+.svgIcon{
+    fill: #707070;
+    margin-right: 0.6em;
+    width:2em;
+}
+
+.navbar__container__links li , .navbar__container__links li a {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__second{
+    display:none;
+}
+.navbar__second i {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.nav--link:hover{color:#da9310}
+.navbar__second i:nth-child(2) {
+   font-size: 600;
+   font-size: 2em;
+}
+form{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;align-items: center;
+
+}
+.btnLogout{
+    background-color: initial;
+}
+@media screen and (max-width: 768px){
+    .navbar__container{
+        display:grid;
+        padding-bottom: 0.5em;
+        grid-template-rows: auto;
+    }
+    header{
+        justify-content: inherit;
+    }
+    .navbar__second{
+        display: inline-block;
+        margin-right: 0.6em;
+    }
+    .first-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar__container__links{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        font-size:1.1em;
+        display: none;
+        margin-bottom: 0.6em;
+    }
+   .btn--login{
+       width: 11em;
+   }
+}
+@media screen and (min-width: 768px){
+    .navbar__container__btn ,.navbar__container__links{
+        display: flex;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de connexion</title>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"
+  ></script>
+  <link href="/css/signup.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="CenterText">
+    <p class="Message">
+      Cette partie est exclusivement réservé aux administrateurs</br>
+      merci de votre compréhension.
+    </p>
+  </div>
+  <span class="ComeBckArrow">
+    <a href="/">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"/></svg>
+    </a>
+  </span>
+    <div id="container">
+        <% if(error) {%>
+            <p class="errorMessage"> 
+                  <%= errorMessage %>
+                </p>
+         <% } %>   
+        <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470.92 470.92"><defs><style>.cls-1{fill:#0e5c5d;}.cls-2{fill:#fff;}.cls-3{fill:#00b1b4;}</style></defs><circle class="cls-1" cx="235.46" cy="235.46" r="235.46"/><rect class="cls-2" x="103.06" y="95.06" width="264.79" height="306.5" rx="46.07"/><rect class="cls-3" x="127.6" y="120.35" width="215.18" height="263.68" rx="38.09"/><path class="cls-2" d="M416.14,201.2a32.37,32.37,0,0,1,10.49,1.86,37.24,37.24,0,0,1,9.57,4.78q-1.33,6.78-2.46,12.22T431.68,230q-.93,4.45-1.79,8.1t-1.66,6.84q-3.19,12-6.58,21.59a158.53,158.53,0,0,1-7.17,17.33,103.5,103.5,0,0,1-8,13.68,68,68,0,0,1-9,10.49,54.82,54.82,0,0,1-9.3,7.17,27.51,27.51,0,0,1-8.63,3.58,38.22,38.22,0,0,1-9.83-1.19,27.91,27.91,0,0,1-7.77-3.25,15.83,15.83,0,0,1-5-4.92,11.59,11.59,0,0,1-1.8-6.31A31.15,31.15,0,0,1,357,293.7a102.57,102.57,0,0,1,5.71-13.35,17.77,17.77,0,0,1,3.72.8,43.13,43.13,0,0,1,4.25,1.59,26.28,26.28,0,0,1,3.85,2.06A10.29,10.29,0,0,1,377.1,287a39.38,39.38,0,0,0-6.91,9.63,20.86,20.86,0,0,0-2.66,9.1,9.19,9.19,0,0,0,.87,4,8.5,8.5,0,0,0,3,3.25q8.1-3,15.8-11.35A84,84,0,0,0,400.87,281a116.19,116.19,0,0,0,6.51-16.74q2.91-9.42,5-18.92t3.18-18.2a117.58,117.58,0,0,0,1.13-14.67c0-.62,0-1.48-.06-2.59s-.09-2.26-.14-3.45-.11-2.28-.2-3.26S416.14,201.56,416.14,201.2Z" transform="translate(-189.97 -37.07)"/><path class="cls-2" d="M414.72,379.46c-5.23-1.56-8.75-3-10.59-4.46a7,7,0,0,1-2.75-5.85,50,50,0,0,1,1.93-11.61q1.92-7.5,5-16.7t7.07-19.25q4-10,8.11-19.24t8.05-16.84a99.75,99.75,0,0,1,6.94-11.89l-1-5.77a21.53,21.53,0,0,1,5.36,1q3.44,1,6.94,2.33A58,58,0,0,1,456,274c1.79,1,2.77,1.77,3,2.41a75,75,0,0,0-1.1,10q-.42,6.68-.41,14.23,0,15,1.17,29.35a149.15,149.15,0,0,0,5.42,29.21q2.2-11,4.75-21.93t5.29-20.89q2.75-10,5.5-18.49t5.29-14.91a71.91,71.91,0,0,1,4.74-10q2.21-3.63,4-3.92a12.9,12.9,0,0,1,3.3,1.17,23.23,23.23,0,0,1,3.43,2.13,22.65,22.65,0,0,1,3,2.75,16.07,16.07,0,0,1,2.2,3c-2.94,1.19-5.84,4-8.73,8.38a97.35,97.35,0,0,0-8.25,16q-3.92,9.4-7.28,20.41t-5.91,21.65q-2.55,10.65-4,19.72a116.06,116.06,0,0,0-1.58,14.58.53.53,0,0,0,.14.41,2.93,2.93,0,0,1-.9.14h-.89a36.4,36.4,0,0,1-11.2-1.58q-4.89-1.59-6.4-4.47-2.88-11.55-4.81-22.27t-3.23-21.45q-1.31-10.71-2.06-21.65T439.32,285a80.43,80.43,0,0,0-5.5,10.79q-2.88,6.66-5.63,14.64t-5.29,16.77q-2.55,8.79-4.47,17.18t-3,15.88a91.33,91.33,0,0,0-1.09,13c0,1.92,0,3.3.06,4.12A7.84,7.84,0,0,0,414.72,379.46Z" transform="translate(-189.97 -37.07)"/></svg>
+        <form action="/users/signup" method="post" class="Formcontrol" >
+            <input placeholder="entrer votre nom d'utilisateur" type="text" name="username" class="form__input">
+            <input placeholder="entrer votre email" type="email" name="email" class="form__input">
+            <input placeholder="entrer votre mot de passe" name="mdp" type="password" class="form__input">
+            <input placeholder="entrer le codeSecret" type="password" name="secretCode" class="form__input">
+            <input type="submit" class="form__submitBtn" value=" s'inscrire" >
+           </form>
+    </div>
+    <script src="/javascripts/login.js"></script>
+</body>
+</html>

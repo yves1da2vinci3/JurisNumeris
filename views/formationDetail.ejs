@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />    <!-- JavaScript Bundle with Popper -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/animate.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/navbar.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/images/ico/favicon.ico" />
+    <link href="/css/footer.css" rel="stylesheet" />
+    <link href="/css/formationDetail.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMATION| Detail</title>
+</head>
+<body>
+    <%- include('./layout/navbar.ejs'); -%>
+       <div class="formationItem__container">
+         <div class="formationItem__img">
+          <span class="ComeBckArrow">
+            <a href="/formations">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"/></svg>
+            </a>
+          </span>
+           <img class="formation__img" src=<%= formation.imageUrl %> />
+         </div>
+         <h1 class="formationItem__Title"> <%= formation.name %> </h1>
+         <p class="formationItem__description">
+          <%= formation.Description %>
+         </p>
+         <div class="formationItem__info">
+           <p class="cible">Public cible:</p>
+           <p class="cibleInfo">
+            <%= formation.Cible %>
+           </p>
+           <p class="cible">Duree:</p>
+           <p class="cibleInfo">
+            <%= formation.duree %>
+           </p>
+         </div>
+         <div class="navbar__container__btn--2">
+          <div id="formationBtn" class="btn--login--2">
+            S'inscrire pour la formation
+          </div>
+        </div>
+        <form action="/reservation" method="post" class="Formcontrol" >
+          <input placeholder="entrer votre email" type="email" name="email" class="form__input">
+          <input placeholder="entrer votre Nom " name="username" type="text" class="form__input">
+          <input placeholder="entrer votre prenom " name="LastName" type="text" class="form__input">
+          <input type="hidden" name='formationName'
+           value= "<%= formation.name %>"
+            />
+          <input placeholder="entrer votre Numero de telephone " name="Numbtel" type="text" class="form__input">
+          <!-- <p class="info"> duree de la formation</p> -->
+          <!-- <select class="Formation__duration">
+            <option name="day" id="1">1 jour</option>
+            <option name="day" id="2">2 jours</option>
+            <option name="day" id="3">3 jours</option>
+          </select> -->
+          <!-- <p class="info"> Prix</p>
+          <p class="formation__item__prix">300.000 <span>FCFA</span></p> -->
+          <input type="submit" class="form__submitBtn" value=" valider" >
+         </form>
+       </div>
+    <%- include('./layout/footer.ejs'); -%>
+    <script src="/javascripts/navbar.js"></script>
+    <script src="/javascripts/formationDetail.js"></script>
+</body>
+</html>

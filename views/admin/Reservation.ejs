@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link href="/css/bill.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <div class="billContainer">
+    
+     <div class="billContainer__body">
+        
+   <h2 class="billContainer__body__title">informations concernant le reservatueur</h2>
+
+   <p class="informations__Email"> <span class="billContainer__body__info">Email : </span> <%= reservation.Email  %></p>
+   <p class="informations__name"> <span class="billContainer__body__info">Nom : </span><%= reservation. userName %></p>
+   <p class="informations__name"> <span class="billContainer__body__info">Prenom : </span> <%= reservation.LastName  %></p>
+   <p class="informations__Numero"> <span class="billContainer__body__info">Numero : </span><%= reservation.userNumber %></p>
+   <p class="informations__formation"> <span class="billContainer__body__info">Formation : </span><%= reservation.FormationName %></p>   
+     </div>
+     
+        
+      </div>
+    </div>
+    <script src="javascripts/bill.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+   <link href="/css/navbarAdmin.css" rel="stylesheet" />
+   <link href="/css/dashboard.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />  
+</head>
+<body>
+    <%- include('../layout/navbarAdmin.ejs'); -%>
+   <h1 class="Name"> Liste des reservateurs</h1>
+
+       <table class="TableReservateurs">
+           <tr>
+           <th>Nom</th>
+           <th>Prenom</th>
+           <th>Numero</th>
+           <th>Action</th>
+        </tr>
+        <% for (let i=0; i < reservations.length;i++) {%>
+        <tr>
+            <td><%= reservations[i].userName %></td>
+            <td><%= reservations[i].LastName %></td>
+            <td><%=reservations[i].userNumber %></td>
+            <td><a  class="formation__item__link" href=/users/reservation/<%= reservations[i]._id %> >voir plus </a></td>
+        </tr>
+        <% } %>
+       </table>
+    <script src="/javascripts/navbar.js"></script>
+</body>
+</html>

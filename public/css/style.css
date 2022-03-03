@@ -1,0 +1,183 @@
+svg{
+    width: 8em;
+}
+.homeBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#F8FBFD ;
+    border-bottom: 1px solid #707070 ;
+}
+.homeBanner__title{
+   font-size: 2.8em;
+   font-weight: 600;
+  text-transform: uppercase;
+}
+.homeBanner__subtitle{
+font-size: 2em;
+margin-bottom: 1em;
+
+}
+.HomeBanner_img{
+    width: 70%;
+}
+/* partie missions */
+.missionsContainer{
+    margin-top: 1em;
+}
+.missionsContainer__title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+}
+.missionsContainer__subtitle{
+    color: #707070;
+    text-align: center;
+}
+
+.MissionSet{
+    margin : 0em 0.6em;
+    display: grid ;
+    column-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.MissionItem{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.MissionItem svg {
+    width:5.5em;
+    margin-right: 0.2em;
+}
+
+.MissionItem p{
+    font-size: 1.2em;
+}
+
+.Reasons__container__item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1.25em;
+    margin: 0em 1em;
+}
+.Reasons__container__item:nth-child(1){
+    margin-bottom: 2em;
+}
+.reasons_item__information{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.item__information__title{
+    font-weight: 600;
+    font-size:2em;
+}
+.missionItem__description{
+    font-weight: 400;
+    color: #707070;
+    font-size:1.4em;
+}
+
+
+
+.Reasons__container__item--1{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.Formations__container{
+    background-color: #F8FBFD;
+}
+.formation__text{
+    background-color: #052237;
+    color: white;
+    font-weight: 600;
+    padding: 1.5em;
+    text-align: center;
+}
+.Formations__container__grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(370px, 1fr));
+    column-gap: 1em;
+}
+
+
+.navbar__container__btn--1{
+    display:flex;
+    justify-content: center;
+     flex-direction: row;
+     align-items: center;
+     margin-top: 2em;
+}
+.btn--login--1{
+    color:#052237;
+    background-color:#F8FBFD;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 3em;
+    
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    border: 2px solid #052237;
+}
+.btn--login--1:hover{
+    background: #000;
+    color:#F8FBFD;
+}
+
+@media screen and (max-width: 768px){
+    .homeBanner__title{
+        font-size: 1.8em;
+        
+     }
+     .item__information__title {
+        
+        font-size: 0.8em;
+    }
+    .missionItem__description {
+        
+        font-size: 0.6em;
+    }
+     .missionsContainer__title{
+         font-size: 1.4em;
+     }
+     .homeBanner__subtitle{
+        font-size: 1em;
+        
+        }
+        svg{
+            width: 4em;
+        }
+        .MissionItem{
+            flex-direction: column;
+            width: 86%;
+        }
+        .MissionItem p{
+            font-size: 0.6em;
+        }
+      
+}
+@media screen and (max-width: 938px){
+    .Reasons__container__item{
+        display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      
+    }
+    .reasons_item__information{
+        align-items: unset;
+    }
+    .item__information__title{
+        text-align: center;
+    }
+    
+}

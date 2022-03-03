@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Formations | Cabinet jurisNumeris</title>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet" />
+    <link href="/css/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />    <!-- JavaScript Bundle with Popper -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+   <link href="/css/services.css" rel="stylesheet" />
+  
+</head>
+<body>
+<%- include('./layout/navbar.ejs'); -%>
+  <!--/header-->
+  <h1 class="Container__title">Nos formations</h1>
+  <p class="Container__subtitle">Nos cours portent sur tout les domaines des TICs</p>
+  <div class="Formations__container">
+    <% for (let i=0; i < Formations.length ; i++) { %>
+      <div class="formation__item">
+        <img class="formation__img" src= <%= Formations[i].imageUrl %> alt=""/>
+          <p class="formation__item__name">
+            <%= Formations[i].name %>
+            </p>
+          <p class="formation__item__description">
+            <%= Formations[i].Description %>
+          </p>
+          <a  class="formation__item__link" href=/formation/<%=Formations[i]._id %>>En savoir plus</a>
+      </div>
+      <% } %>
+  </div>
+  
+ 
+    <%- include('./layout/footer.ejs'); -%>
+    <script src="/javascripts/navbar.js" ></script>
+</body>
+</html>
